@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,200&display=swap');
+@font-face {
+    font-family: "poppins-medium";
+    src: url(./font/Poppins-Medium.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "poppins-medium", sans-serif;
+}
+/* header */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+nav {
+    width: 100%;
+    background-color: #0f1410;
+    height: 73px;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu.active{
+    display: block;
+}
+.menu li{
+    margin: 10px;
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.btn-primary{
+    background-color: #02aa44;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 25px;
+    font-weight: 600;
+
+}
+.btn-primary:hover{
+    background-color: #05993e;
+}
+/* header end  */
+
+/*  hero section */
+.show-case{
+    height: 100vh;
+    background-color: #0f1410;
+}
+.show-case-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.show-case-title{
+   color: white;
+   font-size: 4.5rem;
+   line-height: 0.95;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+.show-case-content{
+    font-size: 1.5rem;
+    color: wheat;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.store{
+    display: flex;
+    flex-direction: row;
+}
+.store *{
+    margin: 15px;
+}
+.left-side img{
+    width: 133%;
+    
+}     
+.burger{
+    width: 30px;
+    color: white;
+    display: none;
+    margin-right: 30px;
+}
+
+@media (max-width:600px) {
+    .menu{
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        background-color: #0f1410;
+        padding: 15px;
+        border: 1px solid #455248 ;
+    }
+   .achivements  .achivement-list{
+       grid-template-columns: 1fr;
+    }
+    .achivement-list .achivement-item{
+        margin: 20px;
+    }
+    .btn-primary{
+        display: none;
+    }
+   .burger{
+    background-color: #455248;
+    display: flex;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+
+   }
+   .show-case-items{
+    display: block;
+   }
+   .left-side img{
+    width: 60%;
+   }
+   .show-case-title{
+    font-size: 2.7rem;
+    margin-top: 290px;
+   }
+   .show-case-content{
+    font-size: 18px;
+   }
+    
+   .features{
+    flex-direction: column;
+   }
+
+   .container .unique-content{
+    grid-template-columns: 1fr;
+   }
+   .container .reveiw-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .reveiw-top-bar{
+    text-align: center;
+   }
+   .reveiw-top-heading{
+    display: flex;
+    flex-direction: column;
+   }
+    .reveiw-top-heading  .title{
+    text-align: center;
+    font-size: 35px;
+   }
+   .container .unique h1{
+    font-size: 25px;
+   }
+   footer .grid{
+    grid-template-columns: 1fr;
+    margin-left: 100px;
+    
+   }
+.grid .col{
+    margin: 30px;
+}
+
+.features img{
+    width: 50% !important;
+}
+
+}  
+/* end hero */
+
+/* main section */
+
+.container-sa {
+    max-width: 920px;
+    margin: 0 auto;
+}
+.features{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.features .right-side{
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    margin: 10px;
+}
+.features .right-side .top-bar{
+    color: #02aa44;
+    padding: 10px;
+    font-weight: bold;
+}
+.features .right-side h1{
+    font-size: 1.7rem;
+}
+.features .right-side .text{
+    font-size: 1.1rem;
+    padding: 10px;
+    color: #606060;
+}
+.features .left-side img{
+    width: 480px;
+}
+/* and main */
+
+/* acheivement style */
+
+.achivements{
+    width: 100%;
+    background-color: #0f1410;
+    padding: 100px;
+    color: #fff;
+}
+.achivement-list svg{
+    width: 30px;
+    color:#fff;
+}
+.achivement-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    justify-content: center;
+    align-content: center;
+}
+.a-des{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.stars svg{
+    color: #ffce2f;
+}
+.award svg{
+color: #f97414;
+}
+.group svg {
+     color: #02aa44;
+
+}
+.achivement-list h1{
+    
+    font-size: 1.5rem;}
+    /* work flow */
+
+    .unique{
+        mask-position: relative;
+        width: 100%;
+        padding: 40px;
+    
+
+    }
+    .unique h1{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    .unique-content svg{
+        width:30px;
+        color: white;
+        
+    }
+.unique-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    
+}
+.unique-content-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+}
+.unique-content-item-1 {
+    background-color: #2e7ef8;
+    align-items: center;
+    padding: 10px 15px ;
+    border-radius: 15px 10px;
+
+}
+
+.unique-content-item-2 {
+    background-color: #02aa44;
+    align-items: center;
+    padding: 10px 15px ;
+    border-radius: 15px 10px;
+
+}
+
+.unique-content-item-3 {
+    background-color: #f97414;
+    align-items: center;
+    padding: 10px 15px ;
+    border-radius: 15px 10px;
+
+}
+.unique-content-item p{
+    text-align: center;
+    font-size: 13px;
+}
+.reviews {
+    background-color: #f6f4bb;
+    padding-top:100px ;
+    padding-bottom: 100px;
+}
+.reveiw-top-bar{
+    color: #02aa44;
+}
+.reveiw-top-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.reveiw-top-heading button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 25px;
+font-size: 18px;
+cursor: pointer;
+background-color: transparent;
+    border: 1px solid #c4c4c4;
+}
+.reveiw-top-heading button svg{
+    width: 25px;
+}
+.reveiw-top-heading button:hover{
+    background-color: #e0e0e0;
+} 
+/* end  */
+
+.reveiw-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+}
+.card{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+.card-body p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 15px;
+}
+.card-footer-person{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.card-footer-person h4{
+    font-weight: bold;
+
+}
+.card-footer-person h5{
+    font-weight: 400;
+}
+
+footer{
+    background-color: #0f1410;
+    padding: 50px;
+    color: white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+}
+.col h4{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+.col ul li {
+    list-style: none;
+}
+.col ul a{
+    
+    text-decoration: none;
+    color: #d3c4cd;
+}
+div a{
+    text-decoration: none;
+    color: #d3c4cd;
+}
+ .social-media .items i{
+  color:white;
+  margin-top: 20px;
+}
+i:hover{
+    background-color: #02aa44;
+}
+.line{
+    border-bottom: 1px solid #979797;
+    padding: 20px;
+
+}
+.copy{
+    color: #d3c4cd;
+    text-align: center;
+    padding: 40px;
+}
